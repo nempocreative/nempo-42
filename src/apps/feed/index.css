@@ -1810,8 +1810,53 @@
   0%, 100% { box-shadow: 0 0 0 0 rgba(217, 71, 63, 0.55); }
   50% { box-shadow: 0 0 0 1.2cqw rgba(217, 71, 63, 0); }
 }
+/* Perimeter light: one highlight travels the rim of each shape in turn. */
+@property --s34-orbit {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+.s34-ribbon,
+.s34-list,
+.s34-cta,
+.s34-wa { position: relative; }
+.musicomedy-s34 .s34-ribbon { overflow: visible; }
+.musicomedy-s34 .s34-ribbon::before { display: none; }
+.s34-ribbon::after,
+.s34-list::after,
+.s34-cta::after,
+.s34-wa::after {
+  content: "";
+  position: absolute;
+  inset: -0.45cqw;
+  padding: 0.75cqw;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--s34-orbit),
+    rgba(255, 248, 233, 0) 0deg 196deg,
+    rgba(255, 195, 107, 0.35) 258deg,
+    rgba(255, 216, 140, 0.85) 322deg,
+    #ffe3a3 346deg,
+    #fff8e9 354deg,
+    rgba(255, 248, 233, 0) 360deg
+  );
+  filter: drop-shadow(0 0 0.45cqw rgba(255, 200, 115, 0.8));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  animation: s34-orbit 4.6s linear infinite;
+}
+@keyframes s34-orbit {
+  to { --s34-orbit: 360deg; }
+}
 @media (prefers-reduced-motion: reduce) {
   .s34-row { animation: none; opacity: 1; }
   .s34-wa { animation: none; }
+  .s34-ribbon::after,
+  .s34-list::after,
+  .s34-cta::after,
+  .s34-wa::after { animation: none; }
 }
 
