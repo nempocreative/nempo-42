@@ -40,9 +40,9 @@
 .mc-bumper-intro strong, .mc-bumper-welcome strong { margin-top: 1.875cqh; font-size: 8.25cqh; line-height: 1.03; font-weight: 900; text-shadow: 0 3px 0 var(--bumper-red); }
 .mc-bumper-stage em { font-style: normal; color: var(--bumper-gold); }
 .mc-bumper-intro { animation: mc-bumper-intro 18s ease-in-out infinite; }
-.mc-bumper-performers { position: absolute; inset: 14% 4% 4%; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
-.mc-bumper-performers > span { position: absolute; top: -8%; left: 0; right: 0; text-align: center; font-size: 2.4cqh; animation: mc-talent-heading 18s cubic-bezier(.22,1,.36,1) infinite; }
-.mc-bumper-performers img { width: 100%; height: 86%; object-fit: contain; object-position: bottom; transform-origin: center bottom; animation: mc-talent-photo 18s cubic-bezier(.22,1,.36,1) infinite; }
+.mc-bumper-performers { position: absolute; inset: 9% 4% 2.5%; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+.mc-bumper-performers > span { position: absolute; top: -4%; left: 0; right: 0; text-align: center; font-size: 2.4cqh; animation: mc-talent-heading 18s cubic-bezier(.22,1,.36,1) infinite; }
+.mc-bumper-performers img { width: 100%; height: 89%; object-fit: contain; object-position: bottom; transform-origin: center bottom; animation: mc-talent-photo 18s cubic-bezier(.22,1,.36,1) infinite; }
 .mc-bumper-performers strong { font-size: 6.6cqh; font-weight: 900; color: var(--bumper-gold); text-shadow: 0 2px 0 var(--bumper-red); margin-top: 0.6cqh; animation: mc-talent-name 18s cubic-bezier(.22,1,.36,1) infinite; }
 .mc-bumper-welcome { animation: mc-bumper-end 18s ease-in-out infinite; }
 .mc-bumper-welcome strong { font-size: 6.975cqh; }
