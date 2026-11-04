@@ -1743,6 +1743,9 @@
     width: 210mm; height: 148mm; margin: 0; box-shadow: none;
     -webkit-print-color-adjust: exact; print-color-adjust: exact;
   }
+  .mc-a5:first-child { break-after: page; page-break-after: always; }
+}
+
 /* Slide 34 — request-a-song list over the shared MusiComedy frame. */
 .musicomedy-s34 {
   container-type: size;
