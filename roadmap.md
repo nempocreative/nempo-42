@@ -46,3 +46,4 @@
 
 - [x] Bumper: ukuran 4:3 landscape + foto talent & tulisan SADULI RAGAP diperbesar, rekam ulang MP4 1440x1080
 - [x] Bumper: tambah adegan penutup ajakan pesan menu (kata-kata bagus)
+- [ ] Bumper 2: tagline AI "Tetap disini / Malam ini / Kita Joged Bareng" (ejaan joged) + rekam ulang video unduhan
