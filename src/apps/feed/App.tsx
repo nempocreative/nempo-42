@@ -1,4 +1,4 @@
-import gscLogoAsset from '@/assets/good-story-cafe-logo.jpg.asset.json';
+import gscLogoImage from '@/assets/good-story-cafe-logo.jpg';
 import slide32VideoAsset from '@/assets/nempo-feed-slide-32.mp4.asset.json';
 import slide33VideoAsset from '@/assets/nempo-feed-slide-33.mp4.asset.json';
 import {
@@ -119,7 +119,8 @@ type FeedSlide =
   | 30
   | 31
   | 32
-  | 33;
+  | 33
+  | 34;
 
 type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6;
 
@@ -1885,7 +1886,7 @@ function FeedArtwork({
   exportRef: RefObject<HTMLElement | null>;
 }) {
   // Both MusiComedy slides share the same artwork and branding.
-  const isMusiComedySlide = selectedSlide === 31 || selectedSlide === 32 || selectedSlide === 33;
+  const isMusiComedySlide = selectedSlide === 31 || selectedSlide === 32 || selectedSlide === 33 || selectedSlide === 34;
   const slide = isMusiComedySlide ? 30 : selectedSlide;
   return (
     <main
@@ -1997,12 +1998,12 @@ function FeedArtwork({
       {slide === 1 && <CompactFooterArt />}
       {isMusiComedySlide ? (
         <SlideThirtyOneBackground
-          mode={selectedSlide === 32 ? "cafe" : selectedSlide === 33 ? "plain" : "talent"}
+          mode={selectedSlide === 32 ? "cafe" : selectedSlide === 33 || selectedSlide === 34 ? "plain" : "talent"}
         />
       ) : (
         slide === 30 && <SlideThirtySumpahPemuda />
       )}
-      {selectedSlide === 33 && <SlideThirtyThreeReminder />}
+      {(selectedSlide === 33 || selectedSlide === 34) && <SlideThirtyThreeReminder />}
 
       <div
         className="relative z-10 flex h-full flex-col p-[7.5%]"
@@ -2080,7 +2081,7 @@ function FeedArtwork({
           </div>
           {isMusiComedySlide ? (
             <div className="-translate-y-[7px] max-[640px]:-translate-y-[8px] h-11 w-11 overflow-hidden rounded-[5px] bg-[#f6f1e7] p-0.5 shadow-[0_8px_18px_rgba(0,0,0,0.2)]">
-              <img src={gscLogoAsset.url} alt="Logo Good Story Cafe" className="h-full w-full object-contain" decoding="async" />
+              <img src={gscLogoImage} alt="Logo Good Story Cafe" className="h-full w-full object-contain" decoding="async" />
             </div>
           ) : slide !== 1 ? (
             <div className="relative">
@@ -2138,7 +2139,7 @@ function FeedArtwork({
             </div>
           ) : slide === 1 ? (
             <span className="rounded-full border border-white/25 bg-[#062f4d]/25 px-2 py-1 text-[8px] font-black tracking-[0.12em] text-white/80">
-              {String(slide).padStart(2, "0")} / 33
+              {String(slide).padStart(2, "0")} / 34
             </span>
           ) : null}
         </header>
@@ -2661,7 +2662,7 @@ function App() {
   const exportRef = useRef<HTMLElement | null>(null);
   const isNempoFeed = activeFeed === 'nempo';
   const isHighQualityNempoStorySlide =
-    isNempoFeed && activeSlide >= 20 && activeSlide <= 33;
+    isNempoFeed && activeSlide >= 20 && activeSlide <= 34;
   const isCoupon = activeFeed === 'coupon';
   const isQCard = activeFeed === 'qcard';
   const isRundown = activeFeed === 'rundown';
@@ -2797,7 +2798,7 @@ function App() {
           highQualityCanvas.height,
         );
         renderedCanvas = highQualityCanvas;
-      } else if (isNempoFeed && (activeSlide === 30 || activeSlide === 31 || activeSlide === 32 || activeSlide === 33)) {
+      } else if (isNempoFeed && (activeSlide === 30 || activeSlide === 31 || activeSlide === 32 || activeSlide === 33 || activeSlide === 34)) {
         const artworkWidth = artwork.getBoundingClientRect().width;
         const scale = (outputWidth / artworkWidth) * renderScale;
         renderedCanvas = await domToCanvas(artwork, {
@@ -2968,7 +2969,7 @@ function App() {
       ? isGgsStory
         ? [1, 2, 3]
         : [1, 2, 3, 4, 5, 6]
-      : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33];
+      : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
   const selectedSlide =
     isGgsFeed ? activeClientSlide : activeSlide;
 
@@ -3165,18 +3166,18 @@ function App() {
                   ? 'Menyiapkan PNG…'
                   : isCalendar
                     ? 'Download PNG · 50×70 cm'
-                    : isNempoFeed && (activeSlide === 30 || activeSlide === 31 || activeSlide === 32 || activeSlide === 33)
+                    : isNempoFeed && (activeSlide === 30 || activeSlide === 31 || activeSlide === 32 || activeSlide === 33 || activeSlide === 34)
                       ? 'Download PNG · 3×'
                     : isPhotobooth || isGgsFeed || isHighQualityNempoStorySlide
                       ? 'Download PNG · 3×'
                       : 'Download PNG'}
               </button>
             )}
-            {isNempoFeed && activeSlide === 33 && (
+            {isNempoFeed && (activeSlide === 33 || activeSlide === 34) && (
               <>
                 <a
                   href={slide33VideoAsset.url}
-                  download="Nempo-Feed-Slide-33-MusiComedy-Night.mp4"
+                  download={`Nempo-Feed-Slide-${activeSlide}-MusiComedy-Night.mp4`}
                   className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
                 >
                   <Download className="h-3.5 w-3.5" aria-hidden="true" />
