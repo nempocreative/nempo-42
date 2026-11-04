@@ -23,7 +23,7 @@
 - [ ] Slide 34: turunkan pita REQUEST supaya tidak mepet ke logo MusiComedy Night, lalu rekam ulang MP4 dan verifikasi unduhan.
 - [x] Kecilkan logo NEMPO, naikkan ke ruang kosong atas, dan pisahkan teks PENGISI ACARA dari kepala pada foto; tampilan komputer/ponsel diperiksa.
 - [x] Pulihkan logo NEMPO pembukaan dan beri waktu cukup untuk kemunculan SADULI satu per satu; bumper 18 detik dan MP4 1080×1440 30 fps diperbarui, unduhan cocok dengan file terbaru.
-- [ ] Slide 34: pita REQUEST sudah diturunkan di pratinjau; tunggu konfirmasi owner lalu rekam ulang MP4 dan verifikasi unduhan.
+- [x] SADULI bumper muncul bertahap: teks atas, foto zoom halus, lalu nama; urutan diverifikasi di layar dan MP4 1080×1440 12 detik 30 fps diperbarui.
 - [x] Pembukaan tirai dan wayang sebelum SADULI sama seperti pembukaan awal (1,8 detik), dengan jeda tertutup; urutan buka–tutup–buka–tutup diperiksa, MP4 1080×1440 12 detik 30 fps diperbarui dan unduhan diuji pada komputer/ponsel.
 - [x] Tirai bumper buka-tutup dua kali: tirai menutup setelah judul, lalu membuka lagi untuk SADULI RAGAP dan menutup di akhir (animasi di layar).
 - [ ] Migrasi nempo-41: database baru masih kosong dan akun admin belum dibuat — menunggu data ekspor & email admin.
