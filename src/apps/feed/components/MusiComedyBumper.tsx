@@ -36,6 +36,12 @@ export function MusiComedyBumper() {
           <strong>SADULI RAGAP</strong>
         </div>
         <div className="mc-bumper-event"><strong>4 NOVEMBER 2026</strong><span>GOOD STORY CAFE</span><small>Jl. Sudirman Copong No. 11</small></div>
+        <div className="mc-bumper-menu">
+          <span>LENGKAPI HIBURAN MALAM INI</span>
+          <strong>Tawa makin hangat<br />dengan menu favoritmu</strong>
+          <p>Pesan kopi, camilan, dan hidangan Good Story Cafe sekarang, lalu nikmati setiap lagu dan lawakan sampai akhir.</p>
+          <small>Pesan langsung ke pelayan kami</small>
+        </div>
         <div className="mc-bumper-progress" aria-hidden="true" />
       </div>
     </section>

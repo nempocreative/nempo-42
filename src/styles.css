@@ -70,8 +70,8 @@
 /* Both reveals take 1.8s, with a fully closed pause before SADULI. */
 @keyframes mc-curtain-left { 0%,5% { transform: translateX(0); } 12.5%,25% { transform: translateX(-100%); } 30%,32.5% { transform: translateX(0); } 40%,67.5% { transform: translateX(-100%); } 75%,100% { transform: translateX(0); } }
 @keyframes mc-curtain-right { 0%,5% { transform: translateX(0); } 12.5%,25% { transform: translateX(100%); } 30%,32.5% { transform: translateX(0); } 40%,67.5% { transform: translateX(100%); } 75%,100% { transform: translateX(0); } }
-@keyframes mc-puppet-left { 0%,30%,75% { transform: translateX(12%) rotate(-8deg); } 5%,32.5% { transform: translateX(10%) rotate(5deg); } 12.5%,40% { transform: translateX(-125%) rotate(-14deg); } 18%,25%,46.5%,67.5% { transform: translateX(-125%) rotate(-8deg); } }
-@keyframes mc-puppet-right { 0%,30%,75% { transform: translateX(-12%) rotate(8deg); } 5%,32.5% { transform: translateX(-10%) rotate(-5deg); } 12.5%,40% { transform: translateX(125%) rotate(14deg); } 18%,25%,46.5%,67.5% { transform: translateX(125%) rotate(8deg); } }
+@keyframes mc-puppet-left { 0%,30% { transform: translateX(12%) rotate(-8deg); } 5%,32.5% { transform: translateX(10%) rotate(5deg); } 12.5%,40% { transform: translateX(-125%) rotate(-14deg); } 18%,25%,46.5%,67.5%,100% { transform: translateX(-125%) rotate(-8deg); } }
+@keyframes mc-puppet-right { 0%,30% { transform: translateX(-12%) rotate(8deg); } 5%,32.5% { transform: translateX(-10%) rotate(-5deg); } 12.5%,40% { transform: translateX(125%) rotate(14deg); } 18%,25%,46.5%,67.5%,100% { transform: translateX(125%) rotate(8deg); } }
 @keyframes mc-nempo-reveal { 0%,12.5% { opacity: 0; transform: translateY(10px) scale(.92); } 15%,30% { opacity: 1; transform: translateY(0) scale(1); } 32.25%,75%,100% { opacity: 0; transform: translateY(0) scale(1); } }
 @keyframes mc-title-reveal { 0%,15.75% { opacity: 0; transform: scale(.88) translateY(12px); } 18.75%,30% { opacity: 1; transform: scale(1) translateY(0); } 32.25%,75%,100% { opacity: 0; transform: scale(1) translateY(0); } }
 @keyframes mc-bumper-back { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
