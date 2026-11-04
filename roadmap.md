@@ -45,3 +45,4 @@
 - [ ] Kompres foto unggahan baru ke WebP.
 
 - [ ] Bumper: ukuran 4:3 landscape + foto talent & tulisan SADULI RAGAP diperbesar, rekam ulang MP4 1440x1080
+- [ ] Bumper: tambah adegan penutup ajakan pesan menu (kata-kata bagus)
