@@ -124,7 +124,7 @@
 @keyframes nlo-fade { 0% { opacity: 1; } 5%,93% { opacity: 0; } 100% { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) {
   .nlo-stage, .nlo-stage * { animation: none !important; }
-  .nlo-logo, .nlo-presents, .nlo-event, .nlo-tagline, .nlo-flash, .nlo-fade, .nlo-sparks { opacity: 0; }
+  .nlo-logo, .nlo-sr, .nlo-presents, .nlo-event, .nlo-tagline, .nlo-flash, .nlo-fade, .nlo-sparks { opacity: 0; }
   .nlo-logo { opacity: 1; }
 }
 
