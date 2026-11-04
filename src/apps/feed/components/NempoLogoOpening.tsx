@@ -1,0 +1,72 @@
+import { useEffect, useRef, useState } from 'react';
+import { Download, Pause, Play, RotateCcw, Volume2, VolumeX } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import nempoLogo from '@/assets/nempo-bumper-logo-white.png';
+import eventLogo from '@/assets/musicomedy-night-logo.png';
+const music = '/audio/nempo-opening-gamelan.m4a';
+import video from '@/assets/nempo-opening-logo.mp4';
+
+/** 12-second logo-only opening; animation and gamelan track share one timeline. */
+export function NempoLogoOpening() {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [playing, setPlaying] = useState(true);
+  const [muted, setMuted] = useState(true);
+  const [version, setVersion] = useState(0);
+
+  const restart = (withSound: boolean) => {
+    const audio = audioRef.current;
+    setVersion((v) => v + 1);
+    setPlaying(true);
+    setMuted(!withSound);
+    if (audio) {
+      audio.currentTime = 0;
+      audio.muted = !withSound;
+      if (withSound) void audio.play().catch(() => setMuted(true));
+    }
+  };
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio || muted) return;
+    if (playing) void audio.play().catch(() => setMuted(true));
+    else audio.pause();
+  }, [playing, muted]);
+
+  useEffect(() => () => audioRef.current?.pause(), []);
+
+  return (
+    <section className="mc-bumper-tool" aria-label="Bumper 2: opening logo NEMPO">
+      <audio ref={audioRef} src={music} preload="auto" onEnded={() => restart(true)} />
+      <div className="mc-bumper-controls">
+        <Button variant="outline" size="icon" title={playing ? 'Jeda' : 'Putar'} aria-label={playing ? 'Jeda opening' : 'Putar opening'} onClick={() => setPlaying(!playing)}>
+          {playing ? <Pause /> : <Play />}
+        </Button>
+        <Button variant="outline" size="icon" title="Putar ulang" aria-label="Putar ulang opening" onClick={() => restart(!muted)}><RotateCcw /></Button>
+        <Button variant="outline" onClick={() => (muted ? restart(true) : (setMuted(true), audioRef.current?.pause()))}>
+          {muted ? <Volume2 /> : <VolumeX />}{muted ? 'Putar dengan musik' : 'Matikan musik'}
+        </Button>
+        <Button asChild><a href={video} download="NEMPO-Opening-Logo-1440x1080.mp4"><Download />Download MP4</a></Button>
+      </div>
+      <div key={version} className={`nlo-stage${playing ? '' : ' is-paused'}`} aria-label="Opening logo NEMPO 4:3">
+        <div className="nlo-glow" aria-hidden="true" />
+        <div className="nlo-rays" aria-hidden="true" />
+        <svg className="nlo-ring nlo-ring-outer" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="96" />
+          <circle cx="100" cy="100" r="88" className="nlo-dash" />
+        </svg>
+        <svg className="nlo-ring nlo-ring-inner" viewBox="0 0 200 200" aria-hidden="true">
+          {Array.from({ length: 16 }, (_, i) => (
+            <path key={i} d="M100 14 L106 30 L100 46 L94 30 Z" transform={`rotate(${i * 22.5} 100 100)`} />
+          ))}
+          <circle cx="100" cy="100" r="62" className="nlo-dash" />
+        </svg>
+        <div className="nlo-sparks" aria-hidden="true">{Array.from({ length: 14 }, (_, i) => <i key={i} style={{ ['--i' as string]: i }} />)}</div>
+        <div className="nlo-flash" aria-hidden="true" />
+        <img className="nlo-logo" src={nempoLogo} alt="NEMPO" />
+        <span className="nlo-presents">mempersembahkan</span>
+        <img className="nlo-event" src={eventLogo} alt="MusiComedy Night" />
+        <div className="nlo-fade" aria-hidden="true" />
+      </div>
+    </section>
+  );
+}

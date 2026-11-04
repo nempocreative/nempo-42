@@ -5,7 +5,7 @@ import { Link } from "@/lib/wouter";
 import { NEMPO_WA_URL } from "@/lib/contact";
 import { Nempo01Guestbook } from "./nempo-01-guestbook";
 import { Nempo01Gifts } from "./nempo-01-gifts";
-import musicAsset from "@/assets/nempo-01-beautiful-in-white.mp3";
+const musicAsset = "/audio/nempo-01-beautiful-in-white.mp3";
 import coupleIllustration from "@/assets/nempo-02-couple-illustration.png";
 import "./nempo-01-invitation.css";
 import "./nempo-02-invitation.css";

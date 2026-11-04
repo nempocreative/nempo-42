@@ -7,7 +7,7 @@ import { Nempo01Guestbook } from "./nempo-01-guestbook";
 import couplePhoto from "@/assets/nempo-01-ai-couple.jpg";
 import walkPhoto from "@/assets/nempo-01-ai-walk.jpg";
 import detailPhoto from "@/assets/nempo-01-ai-detail.jpg";
-import musicAsset from "@/assets/nempo-01-beautiful-in-white.mp3";
+const musicAsset = "/audio/nempo-01-beautiful-in-white.mp3";
 import { Nempo01Gifts } from "./nempo-01-gifts";
 import "./nempo-01-invitation.css";
 
