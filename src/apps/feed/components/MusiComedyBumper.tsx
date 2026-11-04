@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { Download, Pause, Play, RotateCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logo from '@/assets/musicomedy-night-logo.png.asset.json';
+import logo from '@/assets/musicomedy-night-logo.png';
 
 import background from '@/assets/nempo-feed-slide-31-bg.jpg';
-import groupAsset from '@/assets/musicomedy-group.webp.asset.json';
+import group from '@/assets/musicomedy-group.webp';
 import wayang from '@/assets/musicomedy-bumper-wayang.png';
 import video from '@/assets/musicomedy-bumper.mp4';
 import nempoLogo from '@/assets/nempo-bumper-logo-white.png';
@@ -29,10 +29,10 @@ export function MusiComedyBumper() {
         <div className="mc-bumper-nempo"><img src={nempoLogo} alt="NEMPO" /></div>
         <div className="mc-bumper-puppet mc-bumper-puppet-left"><img src={wayang} width={1024} height={1536} alt="Wayang membuka panggung dari kiri" /></div>
         <div className="mc-bumper-puppet mc-bumper-puppet-right"><img src={wayang} width={1024} height={1536} alt="Wayang membuka panggung dari kanan" /></div>
-        <div className="mc-bumper-title-reveal"><span>NEMPO GARUT × KALA MUDA</span><img src={logo.url} alt="MusiComedy Night" /><strong>SELAMAT MENIKMATI ACARA</strong></div>
+        <div className="mc-bumper-title-reveal"><span>NEMPO GARUT × KALA MUDA</span><img src={logo} alt="MusiComedy Night" /><strong>SELAMAT MENIKMATI ACARA</strong></div>
         <div className="mc-bumper-performers">
           <span>PENGISI ACARA</span>
-          <img src={groupAsset.url} alt="Para pengisi acara MusiComedy Night berbusana adat Sunda" />
+          <img src={group} alt="Para pengisi acara MusiComedy Night berbusana adat Sunda" />
           <strong>SADULI RAGAP</strong>
         </div>
         <div className="mc-bumper-event"><strong>4 NOVEMBER 2026</strong><span>GOOD STORY CAFE</span><small>Jl. Sudirman Copong No. 11</small></div>
