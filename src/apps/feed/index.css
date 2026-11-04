@@ -1754,6 +1754,12 @@
   --s33-cream: #fff8e9;
   --s33-red: #ce363b;
 }
+/* Vertical card stack: fixed gaps keep the shapes apart at any text size. */
+.s34-stack {
+  display: flex; flex-direction: column; align-items: center;
+  gap: 1.1cqw;
+}
+.musicomedy-s34 .s34-ribbon { padding: 0.8cqw 1.8cqw; }
 .s34-list {
   margin: 0; padding: 1.8cqw 2cqw;
   display: flex; flex-direction: column; gap: 0.9cqw;
