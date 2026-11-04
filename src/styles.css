@@ -62,11 +62,11 @@
 .mc-bumper-title-reveal img { width: 100%; height: auto; }
 .mc-bumper-title-reveal span { font-size: 2.7cqw; color: var(--bumper-gold); font-weight: 900; }
 .mc-bumper-title-reveal strong { font-size: 2.6cqw; color: var(--bumper-paper); font-weight: 900; }
-@keyframes mc-curtain-left { 0%,10% { transform: translateX(0); } 32%,100% { transform: translateX(-100%); } }
-@keyframes mc-curtain-right { 0%,10% { transform: translateX(0); } 32%,100% { transform: translateX(100%); } }
+@keyframes mc-curtain-left { 0%,10% { transform: translateX(0); } 30%,60% { transform: translateX(-100%); } 66%,67% { transform: translateX(0); } 73%,89% { transform: translateX(-100%); } 97%,100% { transform: translateX(0); } }
+@keyframes mc-curtain-right { 0%,10% { transform: translateX(0); } 30%,60% { transform: translateX(100%); } 66%,67% { transform: translateX(0); } 73%,89% { transform: translateX(100%); } 97%,100% { transform: translateX(0); } }
 @keyframes mc-puppet-left { 0% { transform: translateX(12%) rotate(-8deg); } 10% { transform: translateX(10%) rotate(5deg); } 33% { transform: translateX(-72%) rotate(-14deg); } 45%,80% { transform: translateX(-82%) rotate(-8deg); } 92% { transform: translateX(-72%) rotate(-14deg); } 100% { transform: translateX(12%) rotate(-8deg); } }
 @keyframes mc-puppet-right { 0% { transform: translateX(-12%) rotate(8deg); } 10% { transform: translateX(-10%) rotate(-5deg); } 33% { transform: translateX(72%) rotate(14deg); } 45%,80% { transform: translateX(82%) rotate(8deg); } 92% { transform: translateX(72%) rotate(14deg); } 100% { transform: translateX(-12%) rotate(8deg); } }
-@keyframes mc-title-reveal { 0%,38% { opacity: 0; transform: scale(.65) translateY(20px); filter: blur(8px); } 52% { opacity: 1; transform: scale(1.04) translateY(0); filter: blur(0); } 60%,62% { opacity: 1; transform: scale(1); filter: blur(0); } 68%,100% { opacity: 0; transform: scale(.9); filter: blur(0); } }
+@keyframes mc-title-reveal { 0%,38% { opacity: 0; transform: scale(.65) translateY(20px); filter: blur(8px); } 52% { opacity: 1; transform: scale(1.04) translateY(0); filter: blur(0); } 58%,60% { opacity: 1; transform: scale(1); filter: blur(0); } 64%,100% { opacity: 0; transform: scale(.9); filter: blur(0); } }
 @keyframes mc-bumper-back { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
 @keyframes mc-bumper-logo { 0% { opacity: 0; transform: scale(.75); } 7%,94% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.04); } }
 @keyframes mc-bumper-intro { 0%,5% { opacity: 0; transform: translateY(20px); } 12%,25% { opacity: 1; transform: translateY(0); } 32%,100% { opacity: 0; transform: translateY(-15px); } }
