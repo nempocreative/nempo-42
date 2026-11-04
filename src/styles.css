@@ -47,13 +47,10 @@
 .mc-bumper-welcome p { font-size: 3cqw; font-weight: 900; color: var(--bumper-gold); margin-top: 4cqw; }
 .mc-bumper-progress { position: absolute; bottom: 0; left: 0; height: 0.8%; background: var(--bumper-gold); width: 100%; transform-origin: left; animation: mc-bumper-progress 12s linear infinite; z-index: 8; }
 .mc-bumper-stage.is-paused *, .mc-bumper-stage.is-paused { animation-play-state: paused; }
-.mc-bumper-curtain { position: absolute; top: 0; bottom: 0; width: 51%; z-index: 7; background: repeating-linear-gradient(90deg, var(--bumper-red), color-mix(in oklab, var(--bumper-red) 55%, var(--bumper-ink)) 12%, var(--bumper-red) 24%); border-bottom: 3cqw solid var(--bumper-gold); }
+.mc-bumper-curtain { position: absolute; top: 0; bottom: 0; width: 51%; z-index: 7; background: repeating-linear-gradient(90deg, var(--bumper-red), color-mix(in oklab, var(--bumper-red) 55%, var(--bumper-ink)) 12%, var(--bumper-red) 24%); border-bottom: 3cqw solid var(--bumper-gold); will-change: transform; }
 .mc-bumper-curtain-left { left: 0; animation: mc-curtain-left 12s ease-in-out infinite; }
 .mc-bumper-curtain-right { right: 0; animation: mc-curtain-right 12s ease-in-out infinite; }
-.mc-bumper-nempo { position: absolute; left: 29%; top: 6%; width: 42%; z-index: 6; animation: mc-nempo-opening 12s ease-in-out infinite; }
-.mc-bumper-nempo img { display: block; width: 100%; height: auto; }
-@keyframes mc-nempo-opening { 0%,33% { opacity: 0; transform: translateY(12px) scale(.85); } 43%,66% { opacity: 1; transform: translateY(0) scale(1); } 72%,100% { opacity: 0; transform: translateY(-8px) scale(1); } }
-.mc-bumper-puppet { position: absolute; top: 28%; width: 58%; height: 58%; z-index: 8; transform-origin: 50% 90%; }
+.mc-bumper-puppet { position: absolute; top: 28%; width: 58%; height: 58%; z-index: 8; transform-origin: 50% 90%; will-change: transform; }
 .mc-bumper-puppet img { width: 100%; height: 100%; object-fit: contain; }
 .mc-bumper-puppet-left { left: -2%; animation: mc-puppet-left 12s ease-in-out infinite; }
 .mc-bumper-puppet-right { right: -2%; animation: mc-puppet-right 12s ease-in-out infinite; }
@@ -65,8 +62,8 @@
 /* Both reveals take 1.8s, with a fully closed pause before SADULI. */
 @keyframes mc-curtain-left { 0%,10% { transform: translateX(0); } 25%,50% { transform: translateX(-100%); } 60%,65% { transform: translateX(0); } 80%,90% { transform: translateX(-100%); } 100% { transform: translateX(0); } }
 @keyframes mc-curtain-right { 0%,10% { transform: translateX(0); } 25%,50% { transform: translateX(100%); } 60%,65% { transform: translateX(0); } 80%,90% { transform: translateX(100%); } 100% { transform: translateX(0); } }
-@keyframes mc-puppet-left { 0%,60%,100% { transform: translateX(12%) rotate(-8deg); } 10%,65% { transform: translateX(10%) rotate(5deg); } 25%,80% { transform: translateX(-72%) rotate(-14deg); } 35%,50%,90% { transform: translateX(-82%) rotate(-8deg); } }
-@keyframes mc-puppet-right { 0%,60%,100% { transform: translateX(-12%) rotate(8deg); } 10%,65% { transform: translateX(-10%) rotate(-5deg); } 25%,80% { transform: translateX(72%) rotate(14deg); } 35%,50%,90% { transform: translateX(82%) rotate(8deg); } }
+@keyframes mc-puppet-left { 0%,60%,100% { transform: translateX(12%) rotate(-8deg); } 10%,65% { transform: translateX(10%) rotate(5deg); } 25%,80% { transform: translateX(-82%) rotate(-14deg); } 35%,50%,90% { transform: translateX(-82%) rotate(-8deg); } }
+@keyframes mc-puppet-right { 0%,60%,100% { transform: translateX(-12%) rotate(8deg); } 10%,65% { transform: translateX(-10%) rotate(-5deg); } 25%,80% { transform: translateX(82%) rotate(14deg); } 35%,50%,90% { transform: translateX(82%) rotate(8deg); } }
 @keyframes mc-title-reveal { 0%,38% { opacity: 0; transform: scale(.65) translateY(20px); filter: blur(8px); } 52% { opacity: 1; transform: scale(1.04) translateY(0); filter: blur(0); } 58%,60% { opacity: 1; transform: scale(1); filter: blur(0); } 64%,100% { opacity: 0; transform: scale(.9); filter: blur(0); } }
 @keyframes mc-bumper-back { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
 @keyframes mc-bumper-logo { 0% { opacity: 0; transform: scale(.75); } 7%,94% { opacity: 1; transform: scale(1); } 100% { opacity: 0; transform: scale(1.04); } }
