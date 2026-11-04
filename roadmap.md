@@ -20,7 +20,8 @@
 - [x] Halaman 3 rundown: acuan dokumentasi — dua kolom berjarak dan bergaris pemisah, FOTO (sebelum acara, saat pertunjukan, wajib kepotret) di kiri dan VIDEO (sebelum acara, saat pertunjukan, video pendek reels & story) di kanan; kartu serah terima & unggah melebar di bawah, plus empat aturan; kalimatnya masih draf yang menunggu koreksi pemilik. Cetak = 3 halaman A5 mendatar (diverifikasi PDF).
 
 ## Terbuka
-- [ ] Slide 34: hilangkan cahaya menyapu, ganti cahaya berjalan keliling di tepi tiap bentuk; lalu rekam ulang MP4.
+- [x] Slide 34: cahaya menyapu dihapus, diganti cahaya berjalan keliling di tepi tiap bentuk; diverifikasi di pratinjau (slide 33 tetap sama).
+- [ ] Slide 34: rekam ulang MP4 unduhan sampai cocok dengan pratinjau — semua 900 frame penuh, tidak ada frame putih/kosong seperti hasil slide 33.
 - [ ] Slide 34: pita REQUEST sudah diturunkan jauh dari logo MusiComedy Night di pratinjau; tinggal rekam ulang MP4 unduhan setelah posisi disetujui pemilik.
 - [x] Kecilkan logo NEMPO, naikkan ke ruang kosong atas, dan pisahkan teks PENGISI ACARA dari kepala pada foto; tampilan komputer/ponsel diperiksa.
 - [x] Pulihkan logo NEMPO pembukaan dan beri waktu cukup untuk kemunculan SADULI satu per satu; bumper 18 detik dan MP4 1080×1440 30 fps diperbarui, unduhan cocok dengan file terbaru.
