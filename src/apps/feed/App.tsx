@@ -64,6 +64,7 @@ import { SlideTwentyNineCafeCover } from './components/SlideTwentyNineCafeCover'
 import { SlideThirtySumpahPemuda } from './components/SlideThirtySumpahPemuda';
 import { SlideThirtyOneBackground } from './components/SlideThirtyOneBackground';
 import { SlideThirtyThreeReminder } from './components/SlideThirtyThreeReminder';
+import { SlideThirtyFourSongRequest } from './components/SlideThirtyFourSongRequest';
 import { MusiComedyRundown } from './components/MusiComedyRundown';
 import { MusiComedyBumper } from './components/MusiComedyBumper';
 import { Button } from '@/components/ui/button';
@@ -2003,7 +2004,8 @@ function FeedArtwork({
       ) : (
         slide === 30 && <SlideThirtySumpahPemuda />
       )}
-      {(selectedSlide === 33 || selectedSlide === 34) && <SlideThirtyThreeReminder />}
+      {selectedSlide === 33 && <SlideThirtyThreeReminder />}
+      {selectedSlide === 34 && <SlideThirtyFourSongRequest />}
 
       <div
         className="relative z-10 flex h-full flex-col p-[7.5%]"
