@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Download, Pause, Play, RotateCcw, Volume2, VolumeX } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import nempoLogo from '@/assets/nempo-bumper-logo-white.png';
+import saduliLogo from '@/assets/saduli-ragap-logo.png';
 import eventLogo from '@/assets/musicomedy-night-logo.png';
 import tagline from '@/assets/nempo-opening-tagline.png';
 const music = '/audio/nempo-opening-gamelan.m4a';
@@ -63,6 +64,7 @@ export function NempoLogoOpening() {
         </svg>
         <div className="nlo-sparks" aria-hidden="true">{Array.from({ length: 14 }, (_, i) => <i key={i} style={{ ['--i' as string]: i }} />)}</div>
         <div className="nlo-flash" aria-hidden="true" />
+        <img className="nlo-sr" src={saduliLogo} alt="Saduli Ragap Entertainment" />
         <img className="nlo-logo" src={nempoLogo} alt="NEMPO" />
         <img className="nlo-event" src={eventLogo} alt="MusiComedy Night" />
         <img className="nlo-tagline" src={tagline} alt="Tetap disini, malam ini kita joged bareng" loading="lazy" width={1024} height={1024} />
