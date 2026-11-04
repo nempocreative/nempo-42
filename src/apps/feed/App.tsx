@@ -1,6 +1,7 @@
 import gscLogoImage from '@/assets/good-story-cafe-logo.jpg';
 import slide32VideoAsset from '@/assets/nempo-feed-slide-32.mp4.asset.json';
 import slide33VideoAsset from '@/assets/nempo-feed-slide-33.mp4.asset.json';
+import slide34VideoAsset from '@/assets/nempo-feed-slide-34.mp4.asset.json';
 import {
   FaFileExcel,
   FaFileWord,
@@ -64,6 +65,7 @@ import { SlideTwentyNineCafeCover } from './components/SlideTwentyNineCafeCover'
 import { SlideThirtySumpahPemuda } from './components/SlideThirtySumpahPemuda';
 import { SlideThirtyOneBackground } from './components/SlideThirtyOneBackground';
 import { SlideThirtyThreeReminder } from './components/SlideThirtyThreeReminder';
+import { SlideThirtyFourSongRequest } from './components/SlideThirtyFourSongRequest';
 import { MusiComedyRundown } from './components/MusiComedyRundown';
 import { MusiComedyBumper } from './components/MusiComedyBumper';
 import { Button } from '@/components/ui/button';
@@ -2003,7 +2005,8 @@ function FeedArtwork({
       ) : (
         slide === 30 && <SlideThirtySumpahPemuda />
       )}
-      {(selectedSlide === 33 || selectedSlide === 34) && <SlideThirtyThreeReminder />}
+      {selectedSlide === 33 && <SlideThirtyThreeReminder />}
+      {selectedSlide === 34 && <SlideThirtyFourSongRequest />}
 
       <div
         className="relative z-10 flex h-full flex-col p-[7.5%]"
@@ -3176,7 +3179,7 @@ function App() {
             {isNempoFeed && (activeSlide === 33 || activeSlide === 34) && (
               <>
                 <a
-                  href={slide33VideoAsset.url}
+                  href={activeSlide === 34 ? slide34VideoAsset.url : slide33VideoAsset.url}
                   download={`Nempo-Feed-Slide-${activeSlide}-MusiComedy-Night.mp4`}
                   className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
                 >
