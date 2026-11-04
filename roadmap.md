@@ -43,3 +43,5 @@
 - [ ] Verifikasi koneksi Vercel ke Supabase pengguna: menunggu pengaturan tujuan di Vercel dan deploy.
 - [ ] Unggah foto dari `/cms` belum aktif.
 - [ ] Kompres foto unggahan baru ke WebP.
+
+- [ ] Bumper: ukuran 4:3 landscape + foto talent & tulisan SADULI RAGAP diperbesar, rekam ulang MP4 1440x1080
