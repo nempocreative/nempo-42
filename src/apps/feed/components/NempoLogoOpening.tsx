@@ -3,6 +3,7 @@ import { Download, Pause, Play, RotateCcw, Volume2, VolumeX } from 'lucide-react
 import { Button } from '@/components/ui/button';
 import nempoLogo from '@/assets/nempo-bumper-logo-white.png';
 import eventLogo from '@/assets/musicomedy-night-logo.png';
+import tagline from '@/assets/nempo-opening-tagline.png';
 const music = '/audio/nempo-opening-gamelan.m4a';
 import video from '@/assets/nempo-opening-logo.mp4';
 
@@ -64,6 +65,7 @@ export function NempoLogoOpening() {
         <div className="nlo-flash" aria-hidden="true" />
         <img className="nlo-logo" src={nempoLogo} alt="NEMPO" />
         <img className="nlo-event" src={eventLogo} alt="MusiComedy Night" />
+        <img className="nlo-tagline" src={tagline} alt="Tetap disini, malam ini kita jodeg bareng" loading="lazy" width={1024} height={1024} />
         <div className="nlo-fade" aria-hidden="true" />
       </div>
     </section>
