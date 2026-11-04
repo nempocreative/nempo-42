@@ -20,6 +20,8 @@
 - [x] Halaman 3 rundown: acuan dokumentasi — dua kolom berjarak dan bergaris pemisah, FOTO (sebelum acara, saat pertunjukan, wajib kepotret) di kiri dan VIDEO (sebelum acara, saat pertunjukan, video pendek reels & story) di kanan; kartu serah terima & unggah melebar di bawah, plus empat aturan; kalimatnya masih draf yang menunggu koreksi pemilik. Cetak = 3 halaman A5 mendatar (diverifikasi PDF).
 
 ## Terbuka
+- [x] Kecilkan logo NEMPO, naikkan ke ruang kosong atas, dan pisahkan teks PENGISI ACARA dari kepala pada foto; tampilan komputer/ponsel diperiksa.
+- [x] Pulihkan logo NEMPO pembukaan dan beri waktu cukup untuk kemunculan SADULI satu per satu; bumper 18 detik dan MP4 1080×1440 30 fps diperbarui, unduhan cocok dengan file terbaru.
 - [x] SADULI bumper muncul bertahap: teks atas, foto zoom halus, lalu nama; urutan diverifikasi di layar dan MP4 1080×1440 12 detik 30 fps diperbarui.
 - [x] Pembukaan tirai dan wayang sebelum SADULI sama seperti pembukaan awal (1,8 detik), dengan jeda tertutup; urutan buka–tutup–buka–tutup diperiksa, MP4 1080×1440 12 detik 30 fps diperbarui dan unduhan diuji pada komputer/ponsel.
 - [x] Tirai bumper buka-tutup dua kali: tirai menutup setelah judul, lalu membuka lagi untuk SADULI RAGAP dan menutup di akhir (animasi di layar).
