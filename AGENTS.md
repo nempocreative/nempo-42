@@ -10,7 +10,7 @@
 <!-- LOVABLE:END -->
 
 ## Architecture rules
-- MusiComedy's opening bumper lives in its own feed tab with a 3:4 animated stage and a pre-rendered MP4 download; why: event playback and export must match without changing existing slides.
+- MusiComedy's opening bumper lives in its own feed tab with a 4:3 landscape animated stage (ending on a menu-ordering message) and a pre-rendered MP4 download; why: event playback and export must match without changing existing slides.
 - The bumper shows the NEMPO logo and the date/venue footer only in the opening segment and never uses dancer silhouettes; why: the owner asked both to be opening-only/removed, and the stage stays clean for the performers segment.
 - Some subdirectories have their own `AGENTS.md` (`src/assets/`, `src/data/`, `src/apps/`, `src/apps/cms/`, `drizzle/`); read the nearest one before changing files there; why: those rules are scoped to that folder and keep this file short.
 - Event saweran uses the original uploaded QRIS asset in EventSaweran, scoped to MusiComedy Night, with same-origin download and enlargement; why: preserve payment-code integrity without implying automatic payment verification.

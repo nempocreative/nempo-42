@@ -19,9 +19,9 @@ export function MusiComedyBumper() {
           {playing ? <Pause /> : <Play />}
         </Button>
         <Button variant="outline" size="icon" title="Putar ulang" aria-label="Putar ulang bumper" onClick={() => { setVersion(version + 1); setPlaying(true); }}><RotateCcw /></Button>
-        <Button asChild><a href={video} download="MusiComedy-Night-Bumper-1080x1440.mp4"><Download />Download MP4</a></Button>
+        <Button asChild><a href={video} download="MusiComedy-Night-Bumper-1440x1080.mp4"><Download />Download MP4</a></Button>
       </div>
-      <div key={version} className={`mc-bumper-stage${playing ? '' : ' is-paused'}`} aria-label="Bumper MusiComedy Night 3:4">
+      <div key={version} className={`mc-bumper-stage${playing ? '' : ' is-paused'}`} aria-label="Bumper MusiComedy Night 4:3">
         <img className="mc-bumper-backdrop" src={background} alt="" />
 
         <div className="mc-bumper-curtain mc-bumper-curtain-left" aria-hidden="true" />
@@ -36,6 +36,12 @@ export function MusiComedyBumper() {
           <strong>SADULI RAGAP</strong>
         </div>
         <div className="mc-bumper-event"><strong>4 NOVEMBER 2026</strong><span>GOOD STORY CAFE</span><small>Jl. Sudirman Copong No. 11</small></div>
+        <div className="mc-bumper-menu">
+          <span>LENGKAPI HIBURAN MALAM INI</span>
+          <strong>Tawa makin hangat<br />dengan menu favoritmu</strong>
+          <p>Pesan kopi, camilan, dan hidangan Good Story Cafe sekarang, lalu nikmati setiap lagu dan lawakan sampai akhir.</p>
+          <small>Pesan langsung ke pelayan kami</small>
+        </div>
         <div className="mc-bumper-progress" aria-hidden="true" />
       </div>
     </section>
