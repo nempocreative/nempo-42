@@ -1828,18 +1828,19 @@
 .s34-wa::after {
   content: "";
   position: absolute;
-  inset: -0.3cqw;
-  padding: 0.55cqw;
+  inset: -0.45cqw;
+  padding: 0.75cqw;
   border-radius: inherit;
   background: conic-gradient(
     from var(--s34-orbit),
-    rgba(255, 248, 233, 0) 0deg 292deg,
-    rgba(255, 195, 107, 0.85) 330deg,
-    #ffe3a3 348deg,
-    #fff8e9 355deg,
+    rgba(255, 248, 233, 0) 0deg 196deg,
+    rgba(255, 195, 107, 0.35) 258deg,
+    rgba(255, 216, 140, 0.85) 322deg,
+    #ffe3a3 346deg,
+    #fff8e9 354deg,
     rgba(255, 248, 233, 0) 360deg
   );
-  filter: drop-shadow(0 0 0.4cqw rgba(255, 205, 125, 0.7));
+  filter: drop-shadow(0 0 0.45cqw rgba(255, 200, 115, 0.8));
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   -webkit-mask-composite: xor;
