@@ -8,7 +8,7 @@ import { Nempo01Guestbook } from "./nempo-01-guestbook";
 import { Nempo01Gifts } from "./nempo-01-gifts";
 import coverPhoto from "@/assets/nempo-03-wedding-cover.jpg";
 import storyPhoto from "@/assets/nempo-03-wedding-story.jpg";
-import musicAsset from "@/assets/nempo-01-beautiful-in-white.mp3";
+const musicAsset = "/audio/nempo-01-beautiful-in-white.mp3";
 import "./nempo-01-invitation.css";
 import "./nempo-03-invitation.css";
 
