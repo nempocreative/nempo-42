@@ -83,7 +83,7 @@ export function SlideThirtyFourSongRequest() {
       {/* Rentetan list lagu */}
       <ul className="s34-list absolute left-1/2 top-[30.5%] w-[68%] -translate-x-1/2">
         {songs.map((song, i) => (
-          <li className="s34-row" key={song} style={{ '--i': i } as React.CSSProperties}>
+          <li className="s34-row" key={song} style={{ '--i': i } as CSSProperties}>
             <span className="s34-num">{String(i + 1).padStart(2, '0')}</span>
             <span className="s34-title">{song}</span>
             <span className="s34-note-glyph" aria-hidden="true">
