@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "91701a9f-d7fb-4645-aee5-59875d8b39c9",
-  "project_id": "575aef5d-c948-458b-adb1-c69142c88808",
-  "url": "/__l5e/assets-v1/91701a9f-d7fb-4645-aee5-59875d8b39c9/jaipong-silhouette.png.asset.json",
-  "r2_key": "a/v1/575aef5d-c948-458b-adb1-c69142c88808/91701a9f-d7fb-4645-aee5-59875d8b39c9/jaipong-silhouette.png.asset.json",
-  "original_filename": "jaipong-silhouette.png",
-  "size": 403584,
   "content_type": "image/png",
-  "created_at": "2026-11-04T05:49:31Z"
+  "created_at": "2026-11-04T05:49:31Z",
+  "original_filename": "jaipong-silhouette.png",
+  "project_id": "0463ea4b-a1c6-48ea-85ca-99de6ecba35a",
+  "r2_key": "a/v1/0463ea4b-a1c6-48ea-85ca-99de6ecba35a/91701a9f-d7fb-4645-aee5-59875d8b39c9/jaipong-silhouette.png",
+  "size": 403584,
+  "url": "/__l5e/assets-v1/91701a9f-d7fb-4645-aee5-59875d8b39c9/jaipong-silhouette.png.asset.json",
+  "version": 1
 }
