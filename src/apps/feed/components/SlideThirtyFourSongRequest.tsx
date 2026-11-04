@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react';
+
 // Slide 34 — "Request lagu" over the shared MusiComedy frame.
 // Own content: a rentetan list lagu plus a WhatsApp call to action (owner-supplied songs).
 // Slide 33 keeps SlideThirtyThreeReminder untouched (see AGENTS.md).
