@@ -1,5 +1,5 @@
-import frameAsset from '@/assets/nempo-feed-slide-31-gamelan-frame-transparent.png.asset.json';
-import logoAsset from '@/assets/musicomedy-night-logo.png.asset.json';
+import frameImage from '@/assets/nempo-feed-slide-31-gamelan-frame-transparent.png';
+import logoImage from '@/assets/musicomedy-night-logo.png';
 import groupAsset from '@/assets/musicomedy-group.webp.asset.json';
 import bgImage from '@/assets/nempo-feed-slide-31-bg.jpg';
 import cafeToast from '@/assets/good-story-cafe-SJL01955.jpg.asset.json';
@@ -136,14 +136,14 @@ export function SlideThirtyOneBackground({
       </div>
       </>}
       <img
-        src={frameAsset.url}
+        src={frameImage}
         alt="Bingkai MusiComedy Night dengan ilustrasi alat musik tradisional, tanggal 4 November 2026, dan lokasi Good Story Cafe"
         className="absolute inset-0 h-full w-full object-fill"
         loading="eager"
         decoding="async"
       />
       <img
-        src={logoAsset.url}
+        src={logoImage}
         alt="MusiComedy Night"
         className="absolute left-1/2 top-[15%] w-[44%] -translate-x-1/2 drop-shadow-[0_6px_10px_rgba(0,0,0,0.35)]"
         loading="eager"
