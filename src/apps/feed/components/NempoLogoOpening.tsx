@@ -4,7 +4,9 @@ import { Button } from '@/components/ui/button';
 import nempoLogo from '@/assets/nempo-bumper-logo-white.png';
 import saduliLogo from '@/assets/saduli-ragap-logo.png';
 import eventLogo from '@/assets/musicomedy-night-logo.png';
-import tagline from '@/assets/nempo-opening-tagline.png';
+import stayText from '@/assets/nempo-opening-stay.png';
+import tonightText from '@/assets/nempo-opening-tonight.png';
+import danceText from '@/assets/nempo-opening-dance.png';
 const music = '/audio/nempo-opening-gamelan.m4a';
 import video from '@/assets/nempo-opening-logo.mp4';
 
@@ -67,7 +69,9 @@ export function NempoLogoOpening() {
         <img className="nlo-sr" src={saduliLogo} alt="Saduli Ragap Entertainment" />
         <img className="nlo-logo" src={nempoLogo} alt="NEMPO" />
         <img className="nlo-event" src={eventLogo} alt="MusiComedy Night" />
-        <img className="nlo-tagline" src={tagline} alt="Tetap disini, malam ini kita joged bareng" loading="lazy" width={1024} height={1024} />
+        <img className="nlo-tagline nlo-tagline-stay" src={stayText} alt="Tetap disini" />
+        <img className="nlo-tagline nlo-tagline-tonight" src={tonightText} alt="Malam ini" />
+        <img className="nlo-tagline nlo-tagline-dance" src={danceText} alt="Kita Joged Bareng" />
         <div className="nlo-fade" aria-hidden="true" />
       </div>
     </section>
