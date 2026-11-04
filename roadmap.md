@@ -21,8 +21,9 @@
 
 ## Terbuka
 - [x] Slide 34: cahaya menyapu dihapus, diganti cahaya berjalan keliling di tepi tiap bentuk; diverifikasi di pratinjau (slide 33 tetap sama).
-- [ ] Slide 34: rekam ulang MP4 unduhan sampai cocok dengan pratinjau — semua 900 frame penuh, tidak ada frame putih/kosong seperti hasil slide 33.
-- [ ] Slide 34: pita REQUEST sudah diturunkan jauh dari logo MusiComedy Night di pratinjau; tinggal rekam ulang MP4 unduhan setelah posisi disetujui pemilik.
+- [x] Slide 34: MP4 unduhan direkam ulang dari pratinjau — 900 frame penuh tanpa frame putih/kosong, tombol unduh terverifikasi menyajikan file baru.
+- [x] Slide 34: jarak antar kartu dilebarkan (gap 2.8cqw) sehingga kartu judul lagu tidak nempel ke pita REQUEST; pratinjau dan MP4 cocok.
+- [x] Slide 34: pita REQUEST diturunkan jauh dari logo MusiComedy Night; MP4 unduhan direkam ulang dengan posisi final.
 - [x] Kecilkan logo NEMPO, naikkan ke ruang kosong atas, dan pisahkan teks PENGISI ACARA dari kepala pada foto; tampilan komputer/ponsel diperiksa.
 - [x] Pulihkan logo NEMPO pembukaan dan beri waktu cukup untuk kemunculan SADULI satu per satu; bumper 18 detik dan MP4 1080×1440 30 fps diperbarui, unduhan cocok dengan file terbaru.
 - [x] SADULI bumper muncul bertahap: teks atas, foto zoom halus, lalu nama; urutan diverifikasi di layar dan MP4 1080×1440 12 detik 30 fps diperbarui.

@@ -1757,7 +1757,7 @@
 /* Vertical card stack: fixed gaps keep the shapes apart at any text size. */
 .s34-stack {
   display: flex; flex-direction: column; align-items: center;
-  gap: 1.3cqw;
+  gap: 2.8cqw;
 }
 .musicomedy-s34 .s34-ribbon { padding: 0.8cqw 1.8cqw; }
 .s34-list {
