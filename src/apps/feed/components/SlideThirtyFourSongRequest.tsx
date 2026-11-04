@@ -73,7 +73,7 @@ export function SlideThirtyFourSongRequest() {
       </div>
 
       {/* Kicker above the song list */}
-      <div className="musicomedy-s33-ribbon absolute left-1/2 top-[26%] w-fit -translate-x-1/2">
+      <div className="musicomedy-s33-ribbon absolute left-1/2 top-[24.8%] w-fit -translate-x-1/2">
         <p className="musicomedy-s33-ribbon-text" style={{ whiteSpace: 'nowrap', fontSize: '2.6cqw' }}>
           <span className="musicomedy-s33-stamp-inner">REQUEST</span>
           Lagu favoritmu!
@@ -81,7 +81,7 @@ export function SlideThirtyFourSongRequest() {
       </div>
 
       {/* Rentetan list lagu */}
-      <ul className="s34-list absolute left-1/2 top-[30.5%] w-[68%] -translate-x-1/2">
+      <ul className="s34-list absolute left-1/2 top-[30.4%] w-[68%] -translate-x-1/2">
         {songs.map((song, i) => (
           <li className="s34-row" key={song} style={{ '--i': i } as CSSProperties}>
             <span className="s34-num">{String(i + 1).padStart(2, '0')}</span>
@@ -94,7 +94,7 @@ export function SlideThirtyFourSongRequest() {
       </ul>
 
       {/* WhatsApp call to action under the list */}
-      <div className="s34-cta absolute left-1/2 top-[64.5%] w-[70%] -translate-x-1/2">
+      <div className="s34-cta absolute left-1/2 top-[58.5%] w-[70%] -translate-x-1/2">
         <p className="s34-cta-line">Bisa request lagu!</p>
         <p className="s34-cta-sub">Kirim judul lagu yang kamu mau lewat WhatsApp</p>
         <span className="s34-wa">WA 0857-2498-1356</span>

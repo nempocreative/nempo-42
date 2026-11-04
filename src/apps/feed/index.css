@@ -1786,14 +1786,14 @@
 .s34-title { flex: 1; min-width: 0; font-size: 3.1cqw; font-weight: 900; line-height: 1.1; color: #a8262b; }
 .s34-note-glyph { flex: none; color: #c98a2e; font-size: 2.4cqw; font-weight: 800; line-height: 1; }
 .s34-cta {
-  padding: 1.4cqw 2cqw 1.6cqw;
+  padding: 1.1cqw 2cqw 1.3cqw;
   border-radius: 3cqw; border: 2px solid rgba(206, 54, 59, 0.75);
   background: linear-gradient(100deg, #fff8e9, #ffefcf 52%, #fff8e9);
   box-shadow: 0 1.4cqw 3cqw rgba(6, 20, 34, 0.45);
   text-align: center;
 }
 .s34-cta-line { margin: 0; color: #a8262b; font-size: 3.4cqw; font-weight: 900; line-height: 1.15; }
-.s34-cta-sub { margin: 0.3cqw 0 0.9cqw; color: #9a5a2c; font-size: 1.9cqw; font-weight: 700; line-height: 1.25; }
+.s34-cta-sub { margin: 0.25cqw 0 0.75cqw; color: #9a5a2c; font-size: 1.9cqw; font-weight: 700; line-height: 1.25; }
 .s34-wa {
   display: inline-block; padding: 0.55cqw 1.9cqw; border-radius: 999px;
   background: linear-gradient(100deg, #a8262b, #d9473f); color: #fff8e9;
