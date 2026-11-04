@@ -3,7 +3,7 @@ import { Download, Pause, Play, RotateCcw, Volume2, VolumeX } from 'lucide-react
 import { Button } from '@/components/ui/button';
 import nempoLogo from '@/assets/nempo-bumper-logo-white.png';
 import eventLogo from '@/assets/musicomedy-night-logo.png';
-import music from '@/assets/nempo-opening-gamelan.m4a';
+const music = '/audio/nempo-opening-gamelan.m4a';
 import video from '@/assets/nempo-opening-logo.mp4';
 
 /** 12-second logo-only opening; animation and gamelan track share one timeline. */
