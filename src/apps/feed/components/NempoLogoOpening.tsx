@@ -65,7 +65,7 @@ export function NempoLogoOpening() {
         <div className="nlo-flash" aria-hidden="true" />
         <img className="nlo-logo" src={nempoLogo} alt="NEMPO" />
         <img className="nlo-event" src={eventLogo} alt="MusiComedy Night" />
-        <img className="nlo-tagline" src={tagline} alt="Tetap disini, malam ini kita jodeg bareng" loading="lazy" width={1024} height={1024} />
+        <img className="nlo-tagline" src={tagline} alt="Tetap disini, malam ini kita joged bareng" loading="lazy" width={1024} height={1024} />
         <div className="nlo-fade" aria-hidden="true" />
       </div>
     </section>
