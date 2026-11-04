@@ -74,7 +74,7 @@ export function SlideThirtyFourSongRequest() {
 
       {/* Kicker, song list and WhatsApp CTA stack vertically so the shapes
           never overlap — each card sizes itself to its text. */}
-      <div className="s34-stack absolute left-1/2 top-[25.6%] bottom-[21.5%] w-[70%] -translate-x-1/2">
+      <div className="s34-stack absolute left-1/2 top-[26.6%] bottom-[21.5%] w-[70%] -translate-x-1/2">
         <div className="musicomedy-s33-ribbon s34-ribbon w-fit">
           <p className="musicomedy-s33-ribbon-text" style={{ whiteSpace: 'nowrap', fontSize: '2.6cqw' }}>
             <span className="musicomedy-s33-stamp-inner">REQUEST</span>
