@@ -63,7 +63,6 @@ export function NempoLogoOpening() {
         <div className="nlo-sparks" aria-hidden="true">{Array.from({ length: 14 }, (_, i) => <i key={i} style={{ ['--i' as string]: i }} />)}</div>
         <div className="nlo-flash" aria-hidden="true" />
         <img className="nlo-logo" src={nempoLogo} alt="NEMPO" />
-        <span className="nlo-presents">mempersembahkan</span>
         <img className="nlo-event" src={eventLogo} alt="MusiComedy Night" />
         <div className="nlo-fade" aria-hidden="true" />
       </div>
