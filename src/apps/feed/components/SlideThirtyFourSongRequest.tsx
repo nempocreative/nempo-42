@@ -73,7 +73,7 @@ export function SlideThirtyFourSongRequest() {
       </div>
 
       {/* Kicker above the song list */}
-      <div className="musicomedy-s33-ribbon absolute left-1/2 top-[23.5%] w-fit -translate-x-1/2">
+      <div className="musicomedy-s33-ribbon absolute left-1/2 top-[26%] w-fit -translate-x-1/2">
         <p className="musicomedy-s33-ribbon-text" style={{ whiteSpace: 'nowrap', fontSize: '2.6cqw' }}>
           <span className="musicomedy-s33-stamp-inner">REQUEST</span>
           Lagu favoritmu!
