@@ -23,7 +23,7 @@
 .mc-bumper-controls { display: flex; gap: 8px; color: var(--bumper-red); }
 .mc-bumper-stage { position: relative; container-type: inline-size; width: min(90vw, 450px); aspect-ratio: 3 / 4; overflow: hidden; background: var(--bumper-ink); box-shadow: var(--bumper-shadow); isolation: isolate; font-family: 'DM Sans', sans-serif; color: var(--bumper-paper); }
 .mc-bumper-stage * { letter-spacing: 0; }
-.mc-bumper-nempo { position: absolute; top: 15%; left: 24%; width: 52%; z-index: 6; animation: mc-nempo-reveal 18s cubic-bezier(.22,1,.36,1) infinite; }
+.mc-bumper-nempo { position: absolute; top: 13%; left: 34%; width: 32%; z-index: 6; animation: mc-nempo-reveal 18s cubic-bezier(.22,1,.36,1) infinite; }
 .mc-bumper-nempo img { display: block; width: 100%; height: auto; }
 .mc-bumper-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; }
 .mc-bumper-backdrop { animation: mc-bumper-back 18s linear infinite; }
@@ -41,7 +41,7 @@
 .mc-bumper-stage em { font-style: normal; color: var(--bumper-gold); }
 .mc-bumper-intro { animation: mc-bumper-intro 18s ease-in-out infinite; }
 .mc-bumper-performers { position: absolute; inset: 28% 3% 16%; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
-.mc-bumper-performers > span { animation: mc-talent-heading 18s cubic-bezier(.22,1,.36,1) infinite; }
+.mc-bumper-performers > span { position: absolute; top: -17%; left: 0; right: 0; text-align: center; font-size: 3.2cqw; animation: mc-talent-heading 18s cubic-bezier(.22,1,.36,1) infinite; }
 .mc-bumper-performers img { width: 100%; height: 80%; object-fit: contain; object-position: bottom; transform-origin: center bottom; animation: mc-talent-photo 18s cubic-bezier(.22,1,.36,1) infinite; }
 .mc-bumper-performers strong { font-size: 4.8cqw; font-weight: 900; color: var(--bumper-gold); text-shadow: 0 2px 0 var(--bumper-red); margin-top: 1.6cqw; animation: mc-talent-name 18s cubic-bezier(.22,1,.36,1) infinite; }
 .mc-bumper-welcome { animation: mc-bumper-end 18s ease-in-out infinite; }
